@@ -1,0 +1,732 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.tp{
+    position: fixed !important;
+    z-index: 3;
+    width: 100%;
+    background-color: #150303;
+}
+.tp .element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tp .element .logo{
+    width: 80px;
+    margin-left: 30px;
+}
+.tp .element .logo img{
+    width: inherit;
+}
+.tp .element .nav{
+    display: flex;
+    align-items: center;
+}
+.tp .element .nav ul{
+    list-style: none;
+    display: flex;
+}
+.tp .element .nav ul li{
+    margin-right: 50px;
+}
+.tp .element .nav ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Muli", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .4s;
+}
+.tp .element .nav ul li a:hover{
+    color: red;
+}
+.tp .element .nav #quote{
+    background-color: red;
+    padding: 27px 50px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.tp .element  .toggle{
+    color: #fff;
+    display: none;
+}
+.next {
+    background-color: #150303;
+    height: 88vh;
+    margin-bottom: 100px;
+}
+.next .web {
+    font-family: "Muli", sans-serif;
+    margin-bottom: -250px;
+    margin-left: 150px;
+    width: 20%;
+}
+.next .web h1{ 
+    margin-bottom: 13px;
+    font-size: 80px;
+    font-family: "Chivo",sans-serif;
+    color: white;
+    font-weight: 800;
+    line-height: 1;
+}
+.next .web p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+.next .web .box{
+    cursor: pointer;
+    font-family: "Muli", sans-serif;
+    padding: 23px 50px;
+    background-color: red;
+    color: white;
+    transition: .9s;
+    border-radius: 10px;
+}
+.next .web .box:hover{
+    background-color: #fff;
+    color: red;
+}
+.next .web img{
+    margin-top: 200px;
+}
+.next .img {
+    margin-top: -410px;
+    position: absolute;
+    right: 0px;
+}
+.about {
+    margin-top: 110px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+.about .left {
+    margin-top: 40px;
+}
+.about .left p{
+    padding-bottom: 10px;
+    width: 80%;
+    font-family: "Open Sans", sans-serif;
+    color: #675E5E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: -60px;
+    margin-left: 80px;
+}
+.about .right {
+}
+.about .right h2{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Chivo", sans-serif;
+}
+.about .right p{
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: #675E5E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+.about .right span a{
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #FB0000;
+    border: 2px solid #FB0000;
+    padding: 20px 40px;
+    transition: .9s;
+}
+.about .right span a:hover{
+    background-color: #FB0000;
+    color: #fff;
+}
+.price .small {
+    margin-top: 120px;
+}
+.price .small .sma{
+    position: absolute;
+}
+.price .small .smal{
+    margin-top: 350px;
+    position: absolute;
+}
+.price .rice{
+    justify-self: right;
+    margin-right: 280px;
+}
+.price .rice .ric {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #150303;
+}
+.price .rice .ric h2{
+    margin-top: 80px;
+    font-size: 44px;
+    font-family: "Chivo", sans-serif;
+}
+.price .rice .ice .ce {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EFDCE4;
+    display: flex;
+    gap: 200px;
+    margin-bottom: 30px;
+}
+.price .rice .ice .ce p{
+    font-family: "Open Sans", sans-serif;
+    color: #3F4854;
+    font-size: 18px;
+}
+.price .rice .ice {
+    margin-top: 50px;
+}
+.price .rice .ice .ce h4{
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #150303;
+    font-weight: 500;
+}
+.price .rice .ice .ce p span{
+    margin-left: 5px;
+    color: #FB0000;
+    font-family: "Chivo", sans-serif;;
+    font-size: 18px;
+    font-weight: 700
+}
+.price .rice .ice .ces {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EFDCE4;
+    display: flex;
+    gap: 250px;
+    margin-bottom: 30px;
+}
+.price .rice .ice .ces p{
+    font-family: "Open Sans", sans-serif;
+    color: #3F4854;
+    font-size: 18px;
+}
+.price .rice .ice .ces p span{
+    margin-left: 5px;
+    color: #FB0000;
+    font-family: "Chivo", sans-serif;;
+    font-size: 18px;
+    font-weight: 700
+}
+.price .rice .ice .ces h4{
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #150303;
+}
+.price .rice .ice .cep{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EFDCE4;
+    display: flex;
+    gap: 270px;
+    margin-bottom: 30px;
+
+}
+.price .rice .ice .cep h4{
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #150303;
+}
+.price .rice .ice .cep p{
+    font-family: "Open Sans", sans-serif;
+    color: #3F4854;
+    font-size: 18px;
+}
+.price .rice .ice .cep p span{
+    margin-left: 5px;
+    color: #FB0000;
+    font-family: "Chivo", sans-serif;;
+    font-size: 18px;
+    font-weight: 700
+}
+.all {
+    position: relative;
+    margin-top: 150px;
+}
+.all .fall {
+    margin-left: 290px;
+    padding-top: 150px;
+    width: 35%;
+}
+.all .fall .for h2{
+    font-weight: 750;
+    margin-bottom: 55px;
+    font-size: 44px;
+    font-family: "Chivo",sans-serif;
+}
+.all .fall .fr{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "chivo", sans-serif;
+    background-color: #FB0000;
+    color: #fff;
+    padding: 25px 500px 25px 30px;
+}
+.all .fall .f {
+    padding-bottom: 20px;
+    width: 90%;
+    border-bottom: 1px solid #EFDCE4;
+    display: flex;
+    gap: 381px;
+    margin-top: 60px;
+}
+.all .fall .f h4{
+    display: flex;
+    padding-right: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #150303;
+}
+.all .fall .f P{    
+    font-family: "Open Sans", sans-serif;
+    color: #3F4854;
+    font-size: 18px;
+
+}
+.all .fall .f span{
+    margin-left: 5px;
+    color: #FB0000;
+    font-family: "Chivo", sans-serif;;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.all .fall .sp{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 315px;
+    width: 90%;
+    border-bottom: 1px solid #EFDCE4
+}
+.all .fall .sp h4{
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #150303;
+}
+.all .fall .sp p{
+    font-family: "Open Sans", sans-serif;
+    color: #3F4854;
+    font-size: 18px;
+}
+.all .fall .sp span{
+    margin-left: 5px;
+    color: #FB0000;
+    font-family: "Chivo", sans-serif;;
+    font-size: 18px;
+    font-weight: 700;
+}
+.all .fall .ces {
+    width: 90%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EFDCE4;
+    display: flex;
+    gap: 369px;
+    margin-bottom: 30px;
+}
+.all .fall .ces p{
+    font-family: "Open Sans", sans-serif;
+    color: #3F4854;
+    font-size: 18px;
+}
+.all .fall .ces p span{ 
+    margin-left: 5px;
+    color: #FB0000;
+    font-family: "Chivo", sans-serif;;
+    font-size: 18px;
+    font-weight: 700
+}
+.all .fall .ces h4{
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #150303;
+}
+.all .fall .cep{
+    width: 90%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EFDCE4;
+    display: flex;
+    gap: 382px;
+    margin-bottom: 70px;
+
+}
+.all .fall .cep h4{
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #150303;
+}
+.all .fall .cep p{
+    font-family: "Open Sans", sans-serif;
+    color: #3F4854;
+    font-size: 18px;
+}
+.all .fall .cep p span{
+    margin-left: 5px;
+    color: #FB0000;
+    font-family: "Chivo", sans-serif;;
+    font-size: 18px;
+    font-weight: 700
+}
+.all .co{
+    position: relative;
+    margin-top: -550px;
+    margin-bottom: 50px;
+    justify-self: center;
+    margin-left: 750px;
+}
+.background {
+    margin-top: 90px;
+    background-image: url(../Image/section-bg.jpg.webp);
+    height: 48vh;
+}
+.background .row {
+    justify-self: center;
+    position: absolute;
+    margin-top: 70px;
+    display: flex;
+    gap: 5px;
+    width: 57%;
+    height: 31vh;
+}
+.background .row .first {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #150303;
+    border-radius: 18px;
+    margin-left: 20px;
+    height: 30vh;
+    width: 28%;
+    transition: .6s;
+}
+.background .row .first:hover{
+    transform-origin: bottom;
+    background-color: #fff;
+}
+.background .row .first .fir{
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+.background .row .first span a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    font-family: "chivo",sans-serif;
+}
+.background .row .first:hover span a{
+    color: #150303;
+}
+.background .row .first p{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #928888;
+    font-family: "Open Sans", sans-serif;
+    word-spacing: 2px;
+    line-height: 1.4;
+    text-align: center;
+}
+.back {
+    height: 32vh;
+    overflow: hidden;
+}
+.back img{
+    position: relative;
+    width: 20%;
+    transition: .5s;
+}
+.back img:hover{
+    transform: scale(1.1);
+}
+.foot {
+    padding-bottom: 120px;
+    padding-top: 110px;
+    justify-items: center;
+}
+.foot h2{
+    margin-bottom: 55px;
+    color: #150303;
+    font-size: 44px;
+    font-weight: 800px;
+    font-family: "chivo",sans-serif;
+    line-height: 1;
+}
+.foot .foo {
+    display: flex;
+}
+.foot .foo .star {
+    padding: 30px 50px 30px 50px;
+    border-top: 1px solid #EFDCE4;
+    border-right: 1px solid #EFDCE4;
+    border-bottom: 1px solid #EFDCE4;
+}
+.foot .foo .starl {
+    padding: 30px 50px 30px 50px;
+    border-top: 1px solid #EFDCE4;
+    border-bottom: 1px solid #EFDCE4;
+}
+.foot .foo .starl .sta{
+    padding-bottom: 20px;
+    display: flex;
+}
+.foot .foo .starl ul{
+    width: 50%;
+    height: 20px;
+    display: flex;
+}
+.foot .foo .starl ul li{
+    color: #FB0000;
+    list-style: none;
+}
+.foot .foo .star ul{
+    width: 50%;
+    height: 20px;
+}
+.foot .foo .starl p{
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #150303;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 15px;
+}
+.foot .foo .starl .sta p{
+    color: #150303;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.foot .foo .starl .sta {
+    margin-top: 20px;
+}
+.foot .foo .star ul{
+    display: flex
+}
+.foot .foo .star ul li{
+    list-style: none;
+}
+.foot .foo .star ul li i{
+    color: #FB0000;
+}
+.foot .foo .star .sta {
+    padding-bottom: 20px;
+    display: flex;
+}
+.foot .foo .star p{
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #150303;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 15px;
+}
+.foot .foo .star .sta {
+    margin-top: 20px;
+}
+.foot .foo .star .sta p{
+    color: #150303;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.footer {
+    background-color: #150303;
+    width: 100%;
+    height: 50vh;
+}
+.footer .foote{
+    border-bottom: 1px solid #4d2e2e;
+    padding-bottom: 70px;
+    padding-top: 100px;
+    width: 65%;
+    justify-self: center;
+    gap: 300px;
+    display: flex;
+}
+.footer .foote span i{
+    color: #FB0000;
+}
+.footer .foote .phone h4{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "chivo", sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footer .foote .phone ul{
+    width: 70%;
+}
+.footer .foote .phone ul li a{
+    line-height: 1.9;
+    font-size: 15px;
+    font-family: "open sans", sans-serif;
+    text-decoration: none;
+    color: #928888;
+    transition: .5s;
+}
+.footer .foote .phone ul li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.footer .foote .naro {
+    text-align: center;
+}
+.footer .foote .naro p{
+    line-height: 1.5;
+    color: #675E5E;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 60px;
+    font-family: "open sans", sans-serif;
+}
+.footer .foote .naro span{
+    background-color: #251a1a;
+    padding: 17px 17px 14px 17px;
+    border-radius: 23px;
+    transition: .6s;
+    margin-right: 10px;
+}
+.footer .foote .naro span a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.footer .foote .naro span:hover{
+    background-color: #FB0000;
+}
+.footer .foote .naro span:hover a{
+    transform: rotateY(180deg);
+}
+.footer .ast {
+    margin-top: 40px;
+    text-align: center;
+}
+.footer .ast p{
+    color: #928888;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "open sans",sans-serif;
+}
+.footer .ast span i{
+    color: #FB0000;
+    margin: 0px 3px 0px 3px;
+}
+.footer .ast p .as{
+    color: #FB0000;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "open sans",sans-serif;
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    .tp .element{
+        display: block;
+    }
+    .tp .element  .toggle {
+        display: block;
+        background-color: #707070;
+        padding: 10px 0px;
+        text-align: right;
+    }
+    .tp .element .toggle span{
+        background-color: black;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    .tp .element .nav  {
+        display: none;
+    }
+    .tp .element .nav.active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: #707070;
+        margin-top: 35px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+    }    
+    .tp .element .nav ul{
+        display: block;
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+    .tp .element .nav ul li{
+        margin: 10px auto;
+        padding: 5px 0px;
+        border-radius: 5px;
+    }
+    .tp .element .nav #quote {
+        margin-left: 10px;
+    }
+    .tp .element .nav ul li:hover {
+        background-color: #a7a5a5;
+    }
+    .tp .element .nav ul li:hover a {
+        color: black;
+    }
+    .tp .element .nav ul li a {
+        padding: 5px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
